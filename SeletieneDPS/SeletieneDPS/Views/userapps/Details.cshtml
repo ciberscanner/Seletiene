@@ -1,0 +1,138 @@
+﻿@model SeletieneDPS.data.userapp
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>userapp</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.id_card)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_card)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastname1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastname1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastname2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastname2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.birthdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.birthdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.registrationdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.registrationdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telephone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telephone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cellphone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cellphone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.passw)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.passw)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.city1.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.city1.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.collective1.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.collective1.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.state.value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.state.value)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.state1.value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.state1.value)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

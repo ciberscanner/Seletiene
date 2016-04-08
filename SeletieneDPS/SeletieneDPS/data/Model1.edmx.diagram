@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f848ed6c6a5c430dbf8a580e31b44d32" Name="Diagram1">
+        <EntityTypeShape EntityType="seletieneModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.AspNetRoles" Width="1.5" PointX="8.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.AspNetUserClaims" Width="1.5" PointX="13.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.AspNetUserLogins" Width="1.5" PointX="13.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.AspNetUsers" Width="1.5" PointX="11" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.category" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.city" Width="1.5" PointX="3.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.collective" Width="1.5" PointX="3.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.department" Width="1.5" PointX="1.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.productservice" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.qualificationps" Width="1.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.state" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.sysdiagrams" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.userapp" Width="1.5" PointX="6" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="seletieneModel.usercallcenter" Width="1.5" PointX="7.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="seletieneModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.FK_productservice_category" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.FK_city_department" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.FK_userapp_city" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.FK_userapp_collective" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.FK_productservice_state" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.FK_productservice_state1" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.FK_productservice_userapp" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.FK_qualificationps_productservice" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.FK_userapp_state" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.FK_userapp_state1" ManuallyRouted="false" />
+        <AssociationConnector Association="seletieneModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

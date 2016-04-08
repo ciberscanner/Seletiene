@@ -1,0 +1,102 @@
+﻿@model IEnumerable<SeletieneDPS.data.productservice>
+
+@{
+    ViewBag.Title = "Index";
+}
+<p></p>
+
+<div class="navbar navbar-inverse">
+    <div class="container">
+        
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Usuarios", "Index", "userapps")</li>
+                <li>@Html.ActionLink("Productos", "Index", "productservices")</li>
+                <li>@Html.ActionLink("Calificaciones", "Index", "qualificationps")</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h2>Productos</h2>
+@using (Html.BeginForm())
+{
+    <p>
+        <table>
+            <tr>
+                <td>
+                    Buscar por nombre del producto, nombre propietario o descripción:
+                </td>
+                <td>&ensp;</td>
+                <td>
+                    @Html.TextBox("SearchString", null, new { @class = "form-control" })
+                </td>
+                <td>&ensp;</td>
+                <td>
+                    <input type="submit" value="Buscar" class="btn btn-primary" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <div class="radio-inline">
+                            @Html.RadioButton("state", "Todo", true, new { id = "Todo" }) Todos
+                        </div>
+                        <div class="radio-inline">
+                            @Html.RadioButton("state", "Revisado", new { id = "Revisado" }) Validado
+                        </div>
+                        <div class="radio-inline">
+                            @Html.RadioButton("state", "Sin_Revisar", new { id = "Sin_Revisar" }) Sin Validar
+                        </div>
+                    </div>
+
+                </td>
+
+            </tr>
+        </table>
+    </p>
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Nombre")
+        </th>
+        <th>
+            @Html.DisplayName("Descripción")
+        </th>
+        <th>
+            @Html.DisplayName("Vendedor")
+        </th>
+        <th>
+            @Html.DisplayName("Validado")
+        </th>
+        
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.userapp.name1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.state2.value)
+            </td>
+            
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.id })
+            </td>
+        </tr>
+ 
+}
+
+</table>

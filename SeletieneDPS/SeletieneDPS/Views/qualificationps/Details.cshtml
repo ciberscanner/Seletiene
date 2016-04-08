@@ -1,0 +1,50 @@
+﻿@model SeletieneDPS.data.qualificationps
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>qualificationps</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.value)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateup)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateup)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.productservice.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.productservice.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

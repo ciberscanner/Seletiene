@@ -1,0 +1,47 @@
+﻿@model IEnumerable<SeletieneDPS.data.category>
+
+@{
+    ViewBag.Title = "Index";
+}
+<p></p>
+
+<div class="navbar navbar-inverse">
+    <div class="container">
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Usuarios", "Index", "userapps")</li>
+                <li>@Html.ActionLink("Productos", "Index", "productservices")</li>
+                <li>@Html.ActionLink("Calificaciones", "Index", "qualificationps")</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h2>Categorías</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
